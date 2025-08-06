@@ -1,5 +1,5 @@
 #pragma semicolon 1
-//#pragma newdecls required
+#pragma newdecls required
 
 #include <sourcemod>
 #include <async>
@@ -21,6 +21,15 @@ ConVar g_cvAPIToken;
 int i_BuzzID[MAXPLAYERS];
 
 char api_token[128];
+
+public Plugin myinfo = 
+{
+    name = "Lovense4Dead",
+    author = "Rowedahelicon",
+    description = "Don't ask.",
+    version = "1.0",
+    url = "https://cruxes.space/stuff/lovense4dead/"
+}
 
 public void OnPluginStart()
 {    
